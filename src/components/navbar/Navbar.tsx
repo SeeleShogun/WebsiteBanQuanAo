@@ -2,12 +2,11 @@ import React, { useState } from "react"
 import 'bootstrap/dist/css/bootstrap.css';
 import './Navbar.css'
 import { assets } from "../../assets/assets";
-export default function Navbar(){
+export default function Navbar({setShowLogin}){
     const[menu,setMenu] = useState("home")
 
     return (
     <>
-    <div className="app">
         <div className="navbar">
             <img src={assets.logo} alt="" className="logo"/>
             <ul className="navbar-menu">
@@ -26,11 +25,10 @@ export default function Navbar(){
                 <img src={assets.add_icon_cart} alt=""/>
                 <div className="dot"></div>
                 </div>
-                <button>Sign In</button>
+                <button onClick={()=>setShowLogin(true)}>Sign In</button>
             </div>
             
         </div>
-    </div>
     </>
     )
 }

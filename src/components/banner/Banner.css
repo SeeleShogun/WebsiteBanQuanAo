@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+
+.banner{
+    height: 34vw;
+    margin: 30px auto ;
+    padding: 20px 0;
+
+} 
+
+.banner-content1{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items:end;
+    gap: 2vw;
+    max-width: 100%;
+    bottom: 10%;
+    font-family: "Encode Sans Semi Condensed", sans-serif;
+    animation: fadeIn 3s;
+    font-weight: 500;
+    background : url('../../../banner-1.jpg') no-repeat;
+    background-position: right;
+    
+    
+}
+.banner-content2{
+    font-weight: 500;
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    max-width: 100%;
+    max-height:max-content;
+    bottom: 5%;
+    left : 6w;
+    font-family: "Encode Sans Semi Condensed", sans-serif;
+    animation: fadeIn 3s;
+    background : url('../../../banner-2.jpg') no-repeat;
+    background-position: center;
+}
+.banner-content3{
+    font-weight: 500;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2vw;
+    max-width: 100%;
+    height:fit-content;
+    max-height: 80%;
+    left : 6w;
+    
+    font-family: "Encode Sans Semi Condensed", sans-serif;
+    animation: fadeIn 3s;
+    background : url('../../../banner-3.jpg') no-repeat;
+    background-position:left;
+}
+.banner button{
+    background-color:transparent;
+    color: black;
+    border: white;
+}
+
+.banner button:hover {
+    color:deepskyblue;
+}
+/* Banner CSS styles */
+
+
+.banner h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #E83610;
+    font-family: "Jersey 25", sans-serif;
+}
+
+
+

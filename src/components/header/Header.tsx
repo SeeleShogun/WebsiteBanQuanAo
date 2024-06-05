@@ -5,7 +5,6 @@ import { assets } from '../../assets/assets'
 export default function Header(){
     return(
         <>
-            <div className='app'>
                 <div className='header'>
                         <Carousel>
                             <Carousel.Item>
@@ -37,7 +36,6 @@ export default function Header(){
                         
                         
                 </div>
-            </div>
         </>
     )
 }

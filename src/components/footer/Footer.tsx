@@ -1,59 +1,43 @@
-import React from "react";
-import 'bootstrap/dist/css/bootstrap.css';
-import { assets } from "../../assets/assets";
+import React from 'react'
 import './Footer.css'
-export default function Footer(){
-    return(
-        <>
-            <footer className="footer">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-3 col-md-6 col-sm-6">
-                            <div className="footer__about">
-                                <div className="footer__logo">
-                                    <a href="#"><img src={assets.footer_logo} alt=""/></a>
-                                </div>
-                                <p>The customer is at the heart of our unique business model, which includes design.</p>
-                            </div>
-                        </div>
-                        <div className="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
-                            <div className="footer__widget">
-                                <h6>Shopping</h6>
-                                <ul>
-                                    <li><a href="#">Clothing Store</a></li>
-                                    <li><a href="#">Trending Shoes</a></li>
-                                    <li><a href="#">Accessories</a></li>
-                                    <li><a href="#">Sale</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="col-lg-2 col-md-3 col-sm-6">
-                            <div className="footer__widget">
-                                <h6>Shopping</h6>
-                                <ul>
-                                    <li><a href="#">Contact Us</a></li>
-                                    <li><a href="#">Payment Methods</a></li>
-                                    <li><a href="#">Delivary</a></li>
-                                    <li><a href="#">Return & Exchanges</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
-                            <div className="footer__widget">
-                                <h6>NewLetter</h6>
-                                <div className="footer__newslatter">
-                                    <p>Be the first to know about new arrivals, look books, sales & promos!</p>
-                                    <form action="#">
-                                        <input type="text" placeholder="Your email"/>
-                                        <button type="submit"><span className="icon_mail_alt"></span></button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        
-        </>
-    )
+import { assets } from '../../assets/assets'
+const Footer = () => {
+  return (
+    <div className='footer' id='footer'>
+        <div className="footer-content">
+            <div className="footer-content-left">
+                <img src={assets.footer_logo} alt="" />
+                <p>The customer is at the heart of our unique business model, which includes design.</p>
+                
+                    <img src={assets.add_icon_facebook} alt="" />
+                    <img src={assets.add_icon_twitter} alt="" />
+                    <img src={assets.add_icon_linkedin} alt="" />
+                
+            </div>
+            <div className="footer-content-center">
+                <h2>SHOPPING</h2>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>Payment Methods</li>
+                    <li>Delivery</li>
+                    <li>Return & Exchanges</li>
+                </ul>
+            
+            </div>
+            <div className="footer-content-right">
+                <h2>GET IN TOUCH</h2>
+                <ul>
+                    <li>0981626629</li>
+                    <li>contact@gmail.com</li>
+                </ul>
+            </div>
+    </div>
+    <hr />
+    <p className="footer-copyright">
+    Copyright © 2024 All rights reserved .
+    </p>
+    </div>
+  )
 }
+
+export default Footer

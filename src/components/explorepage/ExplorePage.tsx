@@ -3,7 +3,6 @@ import './ExplorePage.css'
 import { product_list } from '../../assets/assets'
 const ExplorePage = ({category,setCategory}) => {
   return (
-    <div className='app'>
       <div className='explore-page' id = 'explore-page'>
           <h1>Explore our page</h1>
           <p className='explore-page-text'>A specialist label creating luxury essentials. Ethically crafted with an unwavering commitment to exceptional quality.</p>
@@ -19,7 +18,6 @@ const ExplorePage = ({category,setCategory}) => {
           </div>
           <hr/>
       </div>
-    </div>
   )
 }
 
