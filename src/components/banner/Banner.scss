@@ -1,0 +1,66 @@
+.banner {
+	width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+	animation: fadeIn 3s;
+}
+
+.banner__item {
+    position: relative;
+   
+}
+
+.banner__item__pic {
+    float: right;
+	img{
+		max-width: 100%;
+		vertical-align: middle;
+	}
+}
+
+.banner__item__text {
+    max-width: 300px;
+    position: absolute;
+    left: 0;
+}
+
+.banner__item__text h2 {
+    color: #111111;
+    font-weight: 700;
+    line-height: 46px;
+    margin-bottom: 10px;
+	font-size: 36px;
+}
+
+.banner__item__text a {
+    display: inline-block;
+    color: #111111;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    padding: 3px 0;
+    position: relative;
+	text-decoration: none;
+}
+
+.banner__item.banner__item--middle {
+    margin-top: -75px;
+	// .banner__item__text{
+	// 	top:300px;
+	// }
+}
+
+.banner__item.banner__item--middle .banner__item__pic {
+    float: none;
+}
+
+.banner__item.banner__item--last {
+    margin-top: 100px;
+}
+
+.banner__item__text a:hover {
+    color: tomato;
+}

@@ -1,6 +1,7 @@
 import React from 'react'
-import './ExplorePage.css'
+import './ExplorePage.scss'
 import { product_list } from '../../assets/assets'
+
 const ExplorePage = ({category,setCategory}) => {
   return (
       <div className='explore-page' id = 'explore-page'>

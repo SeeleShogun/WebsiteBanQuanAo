@@ -1,17 +1,33 @@
-import React, { useState } from "react"
+import React, { useContext, useState } from "react"
 import 'bootstrap/dist/css/bootstrap.css';
-import './Navbar.css'
+import './Navbar.scss'
 import { assets } from "../../assets/assets";
-export default function Navbar({setShowLogin}){
+import { Link, useNavigate } from "react-router-dom";
+import { StoreContext } from "../../context/StoreContext";
+
+interface NavBarProps {
+    setShowLogin: (show: boolean) => void
+}
+export default function Navbar({setShowLogin}:NavBarProps){
     const[menu,setMenu] = useState("home")
+
+    const {getTotalCartAmount,token,setToken} = useContext(StoreContext)
+
+    const navigate = useNavigate()
+
+    const logout = () => {
+        localStorage.removeItem('token')
+        setToken('')
+        navigate('/')
+    }
 
     return (
     <>
         <div className="navbar">
-            <img src={assets.logo} alt="" className="logo"/>
+            <Link to='/'> <img src={assets.logo} alt="" className="logo"/> </Link>
             <ul className="navbar-menu">
-                <li onClick={() =>setMenu("home")} className={menu==="home"?"active":""}>Home</li>
-                <li onClick={() =>setMenu("shop")} className={menu==="shop"?"active":""}>Shop</li>
+               <Link to='/'> <li onClick={() =>setMenu("home")} className={menu==="home"?"active":""}>Home</li> </Link>
+               <Link to='/details'> <li onClick={() =>setMenu("details")} className={menu==="details"?"active":""}>Shop</li> </Link>
                 <li onClick={() =>setMenu("pages")} className={menu==="pages"?"active":""}>Pages</li>
                 <li onClick={() =>setMenu("blog")} className={menu==="blog"?"active":""}>Blog</li>
                 <li onClick={() =>setMenu("contacts")} className={menu==="contacts"?"active":""}>Contacts</li>
@@ -22,10 +38,19 @@ export default function Navbar({setShowLogin}){
                 <img src={assets.add_icon_heart} alt=""/>
                 <div className="navbar-search-icon">
                 
-                <img src={assets.add_icon_cart} alt=""/>
+                <Link to='/cart'><img src={assets.add_icon_cart} alt=""/> </Link>
                 <div className="dot"></div>
                 </div>
-                <button onClick={()=>setShowLogin(true)}>Sign In</button>
+                {!token?<button onClick={()=>setShowLogin(true)}>Sign In</button>
+                :<div className="navbar-profile">
+                    <img src={assets.add_icon_profile} alt="" />
+                    <ul className="navbar-profile-dropdown">
+                        <li onClick={()=>navigate('/myorders')} ><img src={assets.add_icon_bag} alt="" /><p>Orders</p></li>
+                        <hr />
+                        <li onClick={logout}><img src={assets.add_icon_logout} alt="" /><p>Logout</p></li>
+                    </ul>
+                    </div>}
+                
             </div>
             
         </div>

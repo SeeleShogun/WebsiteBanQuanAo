@@ -1,5 +1,5 @@
 import React from 'react'
-import './AppDownload.css'
+import './AppDownload.scss'
 
 function ScrollToTop(){
   window.scrollTo(0,0)

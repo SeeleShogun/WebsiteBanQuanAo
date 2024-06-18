@@ -1,0 +1,31 @@
+.instagram-container {
+    padding-top: 50px;
+    .instagram__pic__item{
+        width: 33.33%;
+        float: left;
+        height: 261px;
+        background-position: center;
+        cursor: pointer;
+    }
+    .instagram__text{
+        padding-top: 130px;
+        a{
+            text-decoration:none;
+            color: tomato;
+        }
+        h3{
+            color: #e53637;
+            font-weight: 700;
+        }
+        p{
+            margin-bottom: 70px;
+        }
+        
+    }
+    animation: fadeIn 5s;
+}
+
+.instagram__pic__item:hover{
+    border: 3px solid tomato;
+    padding: 1px;
+}

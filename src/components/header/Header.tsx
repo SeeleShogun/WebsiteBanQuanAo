@@ -1,4 +1,4 @@
-import './Header.css'
+import './Header.scss'
 import { Carousel } from 'react-bootstrap'
 import React, { useState } from "react"
 import { assets } from '../../assets/assets'

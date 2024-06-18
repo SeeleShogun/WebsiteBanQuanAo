@@ -16,6 +16,12 @@ import product_sale from './img/anythingelse/product-sale.png'
 import app_store from './img/anythingelse/app_store.png'
 import play_store from './img/anythingelse/play_store.png'
 
+//banner
+import banner_1 from './img/banner/banner-1.jpg'
+import banner_2 from './img/banner/banner-2.jpg'
+import banner_3 from './img/banner/banner-3.jpg'
+
+
 // blog
 
 
@@ -46,6 +52,10 @@ import add_icon_remove from './img/icon/remove_icon_red.png'
 import add_icon_facebook from './img/icon/facebook_icon.png'
 import add_icon_linkedin from './img/icon/linkedin_icon.png'
 import add_icon_twitter from './img/icon/twitter_icon.png'
+import add_icon_profile from './img/icon/profile_icon.png'
+import add_icon_bag from './img/icon/bag_icon.png'
+import add_icon_logout from './img/icon/logout_icon.png'
+import add_icon_parcel from './img/icon/parcel_icon.png'
 //instagram
 import instagram_1 from './img/instagram/instagram-1.jpg'
 import instagram_2 from './img/instagram/instagram-2.jpg'
@@ -100,8 +110,9 @@ export const assets = {
     footer_logo,logo,breadcrumb_bg,payment_logo,product_sale,app_store,play_store,
     client_1,client_2,client_3,client_4,client_5,client_6,client_7,client_8,
     hero_1,hero_2,
+    banner_1,banner_2,banner_3,
     add_icon_calendar,add_icon_cart,add_icon_compare,add_icon_heart,add_icon_search,add_icon_x,add_icon_addgreen,add_icon_addwhite,add_icon_remove,
-    add_icon_facebook,add_icon_twitter,add_icon_linkedin,
+    add_icon_facebook,add_icon_twitter,add_icon_linkedin,add_icon_profile,add_icon_bag,add_icon_logout,add_icon_parcel,
     instagram_1,instagram_2,instagram_3,instagram_4,instagram_5,instagram_6,
     product_1,product_2,product_3,product_4,product_5,product_6,product_7,product_8,product_9,product_10,product_11,product_12,product_13,product_14,
     details_payment,product_big1,product_big2,product_big3,product_big4,product_thumb1,product_thumb2,product_thumb3,product_thumb4

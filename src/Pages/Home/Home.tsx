@@ -1,10 +1,10 @@
 import AppDownload from '../../components/appdownload/AppDownload'
+import Banner from '../../components/banner/Banner'
 import ExplorePage from '../../components/explorepage/ExplorePage'
-import Footer from '../../components/footer/Footer'
 import Header from '../../components/header/Header'
-import Navbar from '../../components/navbar/Navbar'
+import Instagram from '../../components/instagram/Instagram'
 import ProductDisplay from '../../components/productdisplay/ProductDisplay'
-import './Home.css'
+import './Home.scss'
 import React, { useState } from "react"
 export default function Home(){
     const[category,setCategory] = useState("All")
@@ -12,8 +12,10 @@ export default function Home(){
         <>
             
             <Header></Header>
+            <Banner/>
             <ExplorePage category={category} setCategory={setCategory}/>
             <ProductDisplay category={category} ></ProductDisplay>
+            <Instagram/>
             <AppDownload/>
             
         </>
