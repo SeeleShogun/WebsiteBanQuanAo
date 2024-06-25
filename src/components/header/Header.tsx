@@ -16,7 +16,7 @@ export default function Header(){
                                 <Carousel.Caption>
                                     <h2>Summer Collection</h2>
                                     <p>A specialist label creating luxury essentials. Ethically crafted with an unwavering commitment to exceptional quality.</p>
-                                    <button>SHOP NOW</button>
+                                    <a href="/shop"> <button >SHOP NOW</button> </a> 
                                 </Carousel.Caption>
                             </Carousel.Item>
 
@@ -29,7 +29,7 @@ export default function Header(){
                                 <Carousel.Caption>
                                     <h2>Winter Collection</h2>
                                     <p>A specialist label creating luxury essentials. Ethically crafted with an unwavering commitment to exceptional quality.</p>
-                                    <button>SHOP NOW</button>
+                                    <a href="/shop"> <button >SHOP NOW</button> </a> 
                                 </Carousel.Caption>
                             </Carousel.Item>
                         </Carousel>

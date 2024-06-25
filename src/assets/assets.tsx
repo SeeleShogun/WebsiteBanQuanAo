@@ -23,7 +23,9 @@ import banner_3 from './img/banner/banner-3.jpg'
 
 
 // blog
-
+import blog_1 from './img/blog/blog-1.jpg'
+import blog_2 from './img/blog/blog-2.jpg'
+import blog_3 from './img/blog/blog-3.jpg'
 
 // clients
 import client_1 from './img/clients/client-1.png'
@@ -111,6 +113,7 @@ export const assets = {
     client_1,client_2,client_3,client_4,client_5,client_6,client_7,client_8,
     hero_1,hero_2,
     banner_1,banner_2,banner_3,
+    blog_1,blog_2,blog_3,
     add_icon_calendar,add_icon_cart,add_icon_compare,add_icon_heart,add_icon_search,add_icon_x,add_icon_addgreen,add_icon_addwhite,add_icon_remove,
     add_icon_facebook,add_icon_twitter,add_icon_linkedin,add_icon_profile,add_icon_bag,add_icon_logout,add_icon_parcel,
     instagram_1,instagram_2,instagram_3,instagram_4,instagram_5,instagram_6,

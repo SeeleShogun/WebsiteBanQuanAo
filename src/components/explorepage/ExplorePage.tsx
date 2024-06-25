@@ -1,6 +1,7 @@
 import React from 'react'
 import './ExplorePage.scss'
 import { product_list } from '../../assets/assets'
+import FilterByPrice from '../filter/filterbyprice/FilterByPrice'
 
 const ExplorePage = ({category,setCategory}) => {
   return (
@@ -17,6 +18,8 @@ const ExplorePage = ({category,setCategory}) => {
                 )
               })}
           </div>
+          <FilterByPrice/>
+          
           <hr/>
       </div>
   )

@@ -14,7 +14,7 @@ export default function Banner() {
                             </div>
                             <div className="banner__item__text">
                                 <h2>Clothing Collections 2030</h2>
-                                <a href="#">Shop now</a>
+                                <a href="/shop">Shop now</a>
                             </div>
                         </div>
                     </div>
@@ -25,7 +25,7 @@ export default function Banner() {
                             </div>
                             <div className="banner__item__text">
                                 <h2>Accessories</h2>
-                                <a href="#">Shop now</a>
+                                <a href="/shop">Shop now</a>
                             </div>
                         </div>
                     </div>
@@ -36,7 +36,7 @@ export default function Banner() {
                             </div>
                             <div className="banner__item__text">
                                 <h2>Shoes Spring 2030</h2>
-                                <a href="#">Shop now</a>
+                                <a href="/shop">Shop now</a>
                             </div>
                         </div>
                     </div>

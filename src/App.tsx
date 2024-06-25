@@ -11,6 +11,8 @@ import PlaceOrder from './Pages/PlaceOrder/PlaceOrder'
 import ProductDetails from './Pages/ProductDetails/ProductDetails'
 import Verify from './Pages/Verify/Verify'
 import MyOrders from './Pages/MyOrders/MyOrders'
+import Shop from './Pages/Shop/Shop'
+import AboutUs from './Pages/AbouUs/AboutUs'
 function App() {
   const [showLogin, setShowLogin] = useState<boolean>(false)
 
@@ -23,9 +25,11 @@ function App() {
           < Route path='/' element={<Home />} />
           < Route path='/cart' element={<Cart />} />
           < Route path='/order' element={<PlaceOrder />} />
-          < Route path='/details' element={<ProductDetails /> } />
-          < Route path='/verify' element={<Verify/>} />
-          <Route path='/myorders' element={<MyOrders/>}/>
+          < Route path='/details' element={<ProductDetails />} />
+          < Route path='/shop' element={<Shop />} />
+          < Route path='/verify' element={<Verify />} />
+          <Route path='/myorders' element={<MyOrders />} />
+          < Route path='/aboutus' element={<AboutUs />}/>
         </Routes>
 
       </div>

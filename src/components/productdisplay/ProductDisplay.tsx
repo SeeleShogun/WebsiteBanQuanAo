@@ -13,6 +13,7 @@ const ProductDisplay = ({category}) => {
                 {product_details_list.map((item,index)=>{
                     if(category==='All' || category===item.category){
                         return <ProductItem key={index} id={item._id} name={item.name} price={item.price} description={item.description} image={item.image}/>
+                                
                     }
                     
                 })}

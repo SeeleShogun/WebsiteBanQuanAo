@@ -1,17 +1,22 @@
 import React, { useContext } from 'react'
 import { useState } from 'react'
 import './ProductItem.scss'
-import { assets } from '../../assets/assets'
+import { assets, product_details_list } from '../../assets/assets'
 import { StoreContext } from '../../context/StoreContext'
+import ProductDetails from '../../Pages/ProductDetails/ProductDetails'
 const ProductItem = ({id,name,price,description,image}) => {
 
     const {cartItems,addToCart,removeFromCart,url} = useContext(StoreContext)
 
   return (
     <div className='product-item'>
+        
 
         <div className="product-item-img-container">
-            <img className="product-item-image" src={url+"/images/"+image} alt="" />
+           <a href={"/details"}> <img className="product-item-image" src={url+"/images/"+image} alt="" />
+
+           </a> 
+
             {
                 !cartItems[id]
                     ?<img className='add' onClick={()=>addToCart(id)} src={assets.add_icon_addwhite} alt="" />

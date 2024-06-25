@@ -24,11 +24,11 @@ export default function Navbar({setShowLogin}:NavBarProps){
     return (
     <>
         <div className="navbar">
-            <Link to='/'> <img src={assets.logo} alt="" className="logo"/> </Link>
+            <Link to='/' onClick={() =>setMenu("home")} > <img src={assets.logo} alt="" className="logo"/> </Link>
             <ul className="navbar-menu">
                <Link to='/'> <li onClick={() =>setMenu("home")} className={menu==="home"?"active":""}>Home</li> </Link>
-               <Link to='/details'> <li onClick={() =>setMenu("details")} className={menu==="details"?"active":""}>Shop</li> </Link>
-                <li onClick={() =>setMenu("pages")} className={menu==="pages"?"active":""}>Pages</li>
+               <Link to='/shop'> <li onClick={() =>setMenu("shop")} className={menu==="shop"?"active":""}>Shop</li> </Link>
+                <Link to='/aboutus'> <li onClick={() =>setMenu("pages")} className={menu==="pages"?"active":""}>Pages</li> </Link>
                 <li onClick={() =>setMenu("blog")} className={menu==="blog"?"active":""}>Blog</li>
                 <li onClick={() =>setMenu("contacts")} className={menu==="contacts"?"active":""}>Contacts</li>
             </ul>

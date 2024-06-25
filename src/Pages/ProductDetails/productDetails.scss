@@ -1,12 +1,25 @@
-.product-details-left-image img{
-    position: relative;
-    height: auto;
-    width: 495px;
-    overflow: hidden;
-    
+.container img {
+    height: 140%;
+    justify-content: space-between;
+    padding-bottom: 20px;
 }
-.swiper-wrapper img {
+.container {
+    padding-bottom: 50px;
+}
+.quantity {
     display: flex;
-    flex-direction: column;
-    height: 100px;
+    justify-content: space-between;
+    .icon-FA{
+        padding-top: 5px;
+    }
+}
+.btn-outline-primary .btn-primary{
+    border-color: tomato;
+    color: black;
+}
+.btn-outline-primary:hover{
+    background-color: tomato;
+}
+.btn-primary:hover{
+    background-color: tomato;
 }
