@@ -30,7 +30,7 @@ export default function Navbar({setShowLogin}:NavBarProps){
                <Link to='/shop'> <li onClick={() =>setMenu("shop")} className={menu==="shop"?"active":""}>Shop</li> </Link>
                 <Link to='/aboutus'> <li onClick={() =>setMenu("pages")} className={menu==="pages"?"active":""}>Pages</li> </Link>
                 <li onClick={() =>setMenu("blog")} className={menu==="blog"?"active":""}>Blog</li>
-                <li onClick={() =>setMenu("contacts")} className={menu==="contacts"?"active":""}>Contacts</li>
+                <Link to='/contacts'> <li onClick={() =>setMenu("contacts")} className={menu==="contacts"?"active":""}>Contacts</li> </Link> 
             </ul>
             <div className="navbar-right">
 

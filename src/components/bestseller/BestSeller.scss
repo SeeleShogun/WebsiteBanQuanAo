@@ -1,0 +1,11 @@
+.swiper-wrapper {
+    padding-bottom: 10px;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after{
+    color: tomato;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: black;
+  }

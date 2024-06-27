@@ -15,13 +15,14 @@ const LatestNews = () => {
             <div className="row">
                 <div className="col-lg-4 col-md-6 col-sm-6">
                     <div className="blog__item">
-                        <div className="blog__item__pic" style={{
-                            backgroundImage: `url(${assets.blog_1})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                            width: '100%',
-                            height: '300px'
-                        }}></div>
+                        <a href="/blog">
+                            <div className="blog__item__pic" style={{
+                                backgroundImage: `url(${assets.blog_1})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                width: '100%',
+                                height: '300px'
+                            }}></div></a>
                         <div className="blog__item__text">
                             <span> 16 February 2030</span>
                             <h5>What Curling Irons Are The Best Ones</h5>
@@ -31,13 +32,14 @@ const LatestNews = () => {
                 </div>
                 <div className="col-lg-4 col-md-6 col-sm-6">
                     <div className="blog__item">
-                        <div className="blog__item__pic" style={{
-                            backgroundImage: `url(${assets.blog_2})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                            width: '100%',
-                            height: '300px'
-                        }}></div>
+                        <a href="/blog">
+                            <div className="blog__item__pic" style={{
+                                backgroundImage: `url(${assets.blog_2})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                width: '100%',
+                                height: '300px'
+                            }}></div></a>
                         <div className="blog__item__text">
                             <span> 21 February 2030</span>
                             <h5>Eternity Bands Do Last Forever</h5>
@@ -47,13 +49,15 @@ const LatestNews = () => {
                 </div>
                 <div className="col-lg-4 col-md-6 col-sm-6">
                     <div className="blog__item">
-                        <div className="blog__item__pic" style={{
-                            backgroundImage: `url(${assets.blog_3})`,
-                            backgroundSize: 'cover',
-                            backgroundPosition: 'center',
-                            width: '100%',
-                            height: '300px'
-                        }}></div>
+                        <a href="/blog">
+                            <div className="blog__item__pic" style={{
+                                backgroundImage: `url(${assets.blog_3})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                width: '100%',
+                                height: '300px'
+                            }}></div>
+                        </a>
                         <div className="blog__item__text">
                             <span> 28 February 2030 </span>
                             <h5>The Health Benefits Of Sunglasses</h5>
